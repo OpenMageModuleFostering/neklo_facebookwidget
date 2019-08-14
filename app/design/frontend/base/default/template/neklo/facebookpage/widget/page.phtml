@@ -1,0 +1,23 @@
+<?php /* @var $this Neklo_FacebookPage_Block_Widget_Page */ ?>
+<?php if ($this->isEnabled()): ?>
+    <div
+        class="fb-page neklo-facebook-page"
+        data-href="<?php echo $this->getHref(); ?>"
+        data-width="<?php echo $this->getWidth(); ?>"
+        data-height="<?php echo $this->getHeight(); ?>"
+        data-tabs="<?php echo $this->getTabs(); ?>"
+        data-hide-cover="<?php var_export($this->isHideCover()); ?>"
+        data-show-facepile="<?php var_export($this->isShowFacepile()); ?>"
+        data-hide-cta="<?php var_export($this->isHideCta()); ?>"
+        data-small-header="<?php var_export($this->isSmallHeader()); ?>"
+        style="width:<?php echo $this->getWidth(); ?>px;height:<?php echo $this->getHeight(); ?>px"
+    >
+        <div class="fb-xfbml-parse-ignore">
+            <blockquote class="tac" cite="<?php echo $this->getHref(); ?>">
+                <a href="<?php echo $this->getHref(); ?>">
+                    <img src="<?php echo $this->getSkinUrl('images/neklo/facebookpage/facebook-loader.gif'); ?>" alt="<?php echo $this->__('Facebook'); ?>"/>
+                </a>
+            </blockquote>
+        </div>
+    </div>
+<?php endif; ?>

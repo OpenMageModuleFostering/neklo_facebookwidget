@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<widgets>
+    <neklo_facebook_page type="neklo_facebookpage/widget_page" translate="label" module="neklo_facebookpage">
+        <name>[NEKLO] Facebook Page Plugin</name>
+        <parameters>
+            <is_enabled translate="label">
+                <label>Is Enabled</label>
+                <required>1</required>
+                <visible>1</visible>
+                <sort_order>10</sort_order>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>1</value>
+            </is_enabled>
+            <href translate="label description">
+                <label>URL Key</label>
+                <description><![CDATA[The URL Key of the Facebook Page<br/>Example: use <b>neklollc</b> for https://www.facebook.com/<b>neklollc</b>]]></description>
+                <required>1</required>
+                <visible>1</visible>
+                <sort_order>20</sort_order>
+                <type>text</type>
+            </href>
+            <width translate="label description">
+                <label>Width</label>
+                <description><![CDATA[The pixel width of the plugin. Min. is <b>180</b> & Max. is <b>500</b>]]></description>
+                <required>0</required>
+                <visible>1</visible>
+                <sort_order>30</sort_order>
+                <type>text</type>
+                <value>340</value>
+            </width>
+            <height translate="label description">
+                <label>Height</label>
+                <description><![CDATA[The pixel height of the plugin. Min. is <b>70</b>]]></description>
+                <required>0</required>
+                <visible>1</visible>
+                <sort_order>40</sort_order>
+                <type>text</type>
+                <value>500</value>
+            </height>
+            <tabs translate="label">
+                <label>Tabs to render</label>
+                <required>1</required>
+                <visible>1</visible>
+                <sort_order>50</sort_order>
+                <type>multiselect</type>
+                <source_model>neklo_facebookpage_source/tabs</source_model>
+                <value>timeline</value>
+            </tabs>
+            <hide_cover translate="label description">
+                <label>Hide Cover Photo</label>
+                <description><![CDATA[Hide the cover photo in the header]]></description>
+                <required>0</required>
+                <visible>1</visible>
+                <sort_order>60</sort_order>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>0</value>
+            </hide_cover>
+            <show_facepile translate="label description">
+                <label>Show Friend's Faces</label>
+                <description><![CDATA[Show profile photos when friends like this]]></description>
+                <required>0</required>
+                <visible>1</visible>
+                <sort_order>70</sort_order>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>1</value>
+            </show_facepile>
+            <hide_cta translate="label">
+                <label>Hide CTA</label>
+                <description><![CDATA[Hide the custom call to action button (if available)]]></description>
+                <required>0</required>
+                <visible>1</visible>
+                <sort_order>80</sort_order>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>0</value>
+            </hide_cta>
+            <small_header translate="label description">
+                <label>Use Small Header</label>
+                <description><![CDATA[Uses a smaller version of the page header]]></description>
+                <required>0</required>
+                <visible>1</visible>
+                <sort_order>90</sort_order>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>0</value>
+            </small_header>
+            <adapt_container_width translate="label description">
+                <label>Adapt to plugin container width</label>
+                <description><![CDATA[Plugin will try to fit inside container]]></description>
+                <required>0</required>
+                <visible>1</visible>
+                <sort_order>100</sort_order>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>1</value>
+            </adapt_container_width>
+            <template translate="label">
+                <label>Template</label>
+                <required>1</required>
+                <visible>1</visible>
+                <sort_order>110</sort_order>
+                <type>select</type>
+                <value>neklo/facebookpage/widget/page.phtml</value>
+                <values>
+                    <featured translate="label">
+                        <value>neklo/facebookpage/widget/page.phtml</value>
+                        <label>Facebook Page Plugin Template</label>
+                    </featured>
+                </values>
+            </template>
+        </parameters>
+    </neklo_facebook_page>
+</widgets>

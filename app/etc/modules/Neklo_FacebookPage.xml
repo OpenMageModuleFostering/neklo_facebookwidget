@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Neklo_FacebookPage>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Neklo_Core/>
+            </depends>
+            <extension_name>Facebook Widget</extension_name>
+            <free>1</free>
+            <url>facebook-widget-extension-for-magento</url>
+        </Neklo_FacebookPage>
+    </modules>
+</config>
